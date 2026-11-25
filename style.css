@@ -1,0 +1,33 @@
+/* Samed · independent apps — shared style (same world as Masterpiece Mend: oxblood wall, gilt, museum label) */
+@import url("fonts/fonts.css");
+:root{--wall:#4a1a20;--wall2:#33111a;--gold:#c9a25a;--cream:#f3ead8;--ink:#f6efe2;--card:#2b1a15}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:24px}
+body{margin:0;color:var(--ink);font:17px/1.6 Figtree,system-ui,sans-serif;
+ background:radial-gradient(ellipse 70% 40% at 50% 0,rgba(255,200,140,.14),transparent 70%),repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 2px,transparent 2px 9px),linear-gradient(var(--wall),var(--wall2)) fixed}
+a{color:#f0cf86;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:clamp(24px,5vw,56px) max(5vw,18px)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;text-wrap:balance;margin:0 0 .4em}
+h1{font-size:clamp(36px,6vw,54px)}h2{font-size:clamp(26px,4vw,34px);margin-top:1.6em}h3{font-size:22px}
+p{margin:0 0 1em;max-width:68ch}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:clamp(28px,5vw,56px)}
+.brand{font:600 24px 'Cormorant Garamond',Georgia,serif;color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+.frame{padding:10px;background:linear-gradient(135deg,#ecd394,#a47d38 28%,#e3c482 52%,#8c6a2c 78%,#d8b86f);box-shadow:0 22px 40px rgba(0,0,0,.45);display:inline-block}
+.frame img{display:block;width:100%;height:auto}
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,56px);align-items:center}
+.lead{font-size:clamp(18px,2.2vw,21px);opacity:.92}
+.plaque{display:inline-block;background:var(--cream);color:var(--card);padding:8px 16px;border-radius:2px;font:600 17px 'Cormorant Garamond',Georgia,serif;box-shadow:0 3px 8px rgba(0,0,0,.35)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:24px;background:var(--cream);color:var(--card);text-decoration:none;font-weight:600}
+.btn.alt{background:none;color:var(--ink);border:1px solid rgba(243,234,216,.4)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin-top:18px}
+.card{background:rgba(0,0,0,.18);border:1px solid rgba(243,234,216,.16);border-radius:6px;padding:20px;display:flex;gap:16px;align-items:flex-start}
+.card img{width:64px;height:64px;border-radius:14px;flex:none}
+.card p{font-size:15px;margin:.2em 0 .6em;opacity:.88}
+.doc{background:var(--cream);color:var(--card);border-radius:6px;padding:clamp(22px,4vw,48px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.doc a{color:#7b2430}.doc h2{font-size:26px;margin-top:1.4em}.doc li{margin:.3em 0;max-width:66ch}
+.meta{font-size:14px;opacity:.7}
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid rgba(243,234,216,.18);font-size:14px;opacity:.75;display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero .frame{max-width:320px}}
